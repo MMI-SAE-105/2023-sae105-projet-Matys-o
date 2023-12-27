@@ -7,3 +7,8 @@ img {
     width: 20%;
     height: auto;
 }
+
+footer img {
+    width: 30%;
+    height: 100%;
+}

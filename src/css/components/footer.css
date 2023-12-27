@@ -1,0 +1,34 @@
+footer {
+    background-color: #000000;
+    color: #fff;
+    font-family: Fjalla One;
+    font-size: var(--body);
+}
+
+.footer__top {
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    gap: 17px;
+}
+
+.footer__top > nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__top a {
+    font-size: var(--heading-1-5);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
