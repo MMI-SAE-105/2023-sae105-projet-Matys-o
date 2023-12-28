@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/src/css/pages/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html"><img src="/public/img/logo.webp" alt="Logo header"></a>
+            <button class="navbar__button" @click="menuOpen = ! menuOpen">
+                <div class="navbar_button_container">
+                    <span class="navbar__button_lines"></span>
+                    <span class="navbar__button_lines"></span>
+                    <span class="navbar__button_lines"></span>
+                </div>
+            </button>
+        </div>
+        <nav class="navbar__menu" x-show="menuOpen">
+            <ul class="navbar__menu_items">
+                <li><a href="articles/replique.html">La réplique</a></li>
+                <li><a href="articles/film.html">Fight Club</a></li>
+                <li><a href="articles/realisateur.html">David Fincher</a></li>
+                <li><a href="articles/livre.html">Insomnia</a></li>
+                <li><a href="articles/musique.html">Where Is My Mind</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="other">
+        <div class="other">
+            <div class="other__title container">
+                <h1>Glossaire</h1>
+            </div>
+            <div class="hero__gradient-end"></div>
+        </div>
+        <div class="other__defs other__container">
+            <div>
+                <p>Psychologie : discipline scientifique qui s'intéresse à l'étude du corpus des connaissances sur les faits psychiques,
+                des comportements et des processus mentaux.</p>
+                <p>Insomnie : manque ou une mauvaise qualité de sommeil qui retentit le lendemain sur les activités diurnes physiques,
+                psychiques et sociales</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer__container">
+        <div class="footer__line"></div>
+        <div class="footer__top">
+            <nav>
+                <ul>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="autresproj.html">Autres projets</a></li>
+                    <li><a href="glossaire.html">Glossaire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/public/img/logo.webp" alt="Logo du site">
+        </div>
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+        <div class="footer__bottom">
+            <img src="/public/img/logo_mmi.webp" alt="Logo MMI">
+            <a href="/en/index.html"><img src="/public/img/english.webp" alt="Drapeau switch anglais"></a>
+    </footer>
+</body>
+
+</html>

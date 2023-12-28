@@ -47,7 +47,11 @@ figure {
 }
 
 .article__container {
-    padding: 50px 25px 70px 25px;
+    padding: 0px 25px 70px 25px;
+}
+
+.other__container {
+    padding: 0px 25px 100px 25px;
 
 }
 
