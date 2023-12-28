@@ -2,14 +2,20 @@ footer {
     background-color: #000000;
     color: #fff;
     font-family: Fjalla One;
-    font-size: var(--body);
+    font-size: var(--footer);
+}
+
+footer p {
+    font-family: Mulish;
+    font-size: var(--footer-2);
+    color: #fff;
 }
 
 .footer__top {
     display: flex;
     padding: 20px 10px;
     align-items: center;
-    gap: 17px;
+    justify-content: space-around;
 }
 
 .footer__top > nav > ul {
@@ -22,7 +28,6 @@ footer {
 }
 
 .footer__top a {
-    font-size: var(--heading-1-5);
     text-decoration: none;
     color: #ffffff;
 }
@@ -30,6 +35,12 @@ footer {
 .footer__bottom {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.footer__bottom a {
+    width: 40%;
+    height: auto;
 }
 
 .footer__line {

@@ -2,6 +2,36 @@ html, body {
     height: 100%;
 }
 
+p {
+    font-family: Mulish;
+    font-size: var(--body);
+    color: #000;
+}
+
+h1 {
+    font-family: Fjalla One;
+    font-size: var(--heading-1);
+    color: #fff;
+    margin: 0
+}
+
+h2 {
+    font-family: Fjalla One;
+    font-size: var(--heading-2);
+    color: #fff;
+    margin: 0
+}
+
+h3 {
+    color: #fff;
+    font-family: Fjalla One;
+}
+
+figure {
+    margin: 0;
+
+}
+
 .noscroll {
     overflow: hidden;
 }

@@ -45,7 +45,12 @@
                 <a class="home__button2" href="articles/film.html">Fight Club</a>
             </div>
             <div class="carousel">
-                <div class="carousel__container">
+                <h2>VOIR AUSSI</h2>
+                <div class="carousel__container" x-ref="parent">
+                    <button class="carousel__button-left" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><img
+                            src="/public/icons/Arrow.svg" alt="Flèche carrousel gauche"></button>
+                    <button class="carousel__button-right" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth"><img
+                            src="/public/icons/Arrow.svg" alt="Flèche carrousel droit"></button>
                     <div class="carousel__item">
                         <a href="articles/realisateur.html">
                             <figure>
@@ -57,7 +62,23 @@
                     <div class="carousel__item">
                         <a href="articles/livre.html">
                             <figure>
-                                <img src="/public/img/home_3.webp" alt="">
+                                <img src="/public/img/home_2.webp" alt="">
+                                <figcaption>Insomnia, récit endormi</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="articles/livre.html">
+                            <figure>
+                                <img src="/public/img/home_2.webp" alt="">
+                                <figcaption>Insomnia, récit endormi</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="carousel__item">
+                        <a href="articles/livre.html">
+                            <figure>
+                                <img src="/public/img/home_2.webp" alt="">
                                 <figcaption>Insomnia, récit endormi</figcaption>
                             </figure>
                         </a>

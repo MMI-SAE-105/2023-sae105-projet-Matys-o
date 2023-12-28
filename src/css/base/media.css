@@ -1,5 +1,6 @@
 img {
     max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -10,5 +11,10 @@ img {
 
 footer img {
     width: 30%;
-    height: 100%;
+    height: auto;
+}
+
+.footer__bottom > a > img {
+    width: 100%;
+    height: auto;
 }
