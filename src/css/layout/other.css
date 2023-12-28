@@ -2,3 +2,15 @@
     font-size: var(--body-2);
     font-family: Mulish;
 }
+
+.other__defs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.other__defs form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
