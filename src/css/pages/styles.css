@@ -9,3 +9,5 @@
 
 @import url('/src/css/components/header.css');
 @import url('/src/css/components/footer.css');
+
+@import url('/src/css/layout/menu.css');

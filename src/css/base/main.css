@@ -2,6 +2,10 @@ html, body {
     height: 100%;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 .footer__container {
-    padding: 10px 20px;
+    padding: 47px 20px 85px 20px;
 }

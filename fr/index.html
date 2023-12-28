@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="/src/css/pages/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
     <header>
         <div class="navbar">
             <a href="index.html"><img src="/public/img/logo.webp" alt="Logo header"></a>
-            <button class="navbar__button">
+            <button class="navbar__button" @click="menuOpen = ! menuOpen">
                 <div class="navbar_button_container">
                     <span class="navbar__button_lines"></span>
                     <span class="navbar__button_lines"></span>
@@ -18,8 +19,8 @@
                 </div>
             </button>
         </div>
-        <nav>
-            <ul>
+        <nav class="navbar__menu" x-show="menuOpen">
+            <ul class="navbar__menu_items">
                 <li><a href="articles/article1.html">La réplique</a></li>
                 <li><a href="articles/article2.html">Fight Club</a></li>
                 <li><a href="articles/article3.html">David Fincher</a></li>
@@ -29,9 +30,14 @@
         </nav>
     </header>
     <main>
-        
+        <h1>Fill contenu</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit obcaecati blanditiis quidem nihil voluptate nulla, doloremque ipsam, quas tempore ex minus possimus labore eos? Doloribus voluptate exercitationem libero animi omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsum possimus officiis eius. Debitis amet saepe laudantium laboriosam suscipit architecto velit, obcaecati, quo corporis consequatur porro nostrum quos unde qui.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at, repellendus cum accusantium, facere magnam ad cupiditate sapiente deleniti numquam corporis, dolorum assumenda. Ut atque, voluptates ullam ratione nobis tempora.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, dignissimos similique vel unde temporibus possimus culpa, quidem corrupti cum qui fugit voluptatem! Voluptatum nostrum tempora commodi aspernatur reprehenderit consequuntur culpa.</p>
     </main>
     <footer class="footer__container">
+        <div class="footer__line"></div>
         <div class="footer__top">
             <nav>
                 <ul>
