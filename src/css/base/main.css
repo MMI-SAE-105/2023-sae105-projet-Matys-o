@@ -6,6 +6,10 @@ html, body {
     overflow: hidden;
 }
 
+.container {
+    padding: 0px 25px 0px 25px;
+}
+
 .footer__container {
     padding: 47px 20px 85px 20px;
 }
