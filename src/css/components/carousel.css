@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 10px;
     position: relative;
+    padding-bottom: 30px;
 }
 
 .carousel figcaption {
@@ -12,14 +13,13 @@
 }
 
 .carousel__container {
-    
     display: flex;
     width: 100%;
     height: auto;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    background-color: #000;
+    background-color: var(--color-1);
 }
 
 .carousel__item {

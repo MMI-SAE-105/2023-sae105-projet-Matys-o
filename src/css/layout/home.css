@@ -1,5 +1,5 @@
 .home {
-    background-color: #000;
+    background-color: var(--color-1);
 }
 
 .home__content {

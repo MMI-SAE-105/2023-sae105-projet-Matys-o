@@ -10,7 +10,8 @@ p {
 
 h1 {
     font-family: Fjalla One;
-    font-size: var(--heading-1);
+    font-size: var(--heading);
+    text-transform: uppercase;
     color: #fff;
     margin: 0
 }
@@ -27,6 +28,11 @@ h3 {
     font-family: Fjalla One;
 }
 
+h4 {
+    font-family: Mulish;
+    font-size: var(--body-2);
+}
+
 figure {
     margin: 0;
 
@@ -38,6 +44,11 @@ figure {
 
 .container {
     padding: 0px 25px 0px 25px;
+}
+
+.article__container {
+    padding: 50px 25px 70px 25px;
+
 }
 
 .footer__container {
