@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/src/css/pages/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/fr/index.html"><img src="/public/img/logo.webp" alt="Logo header"></a>
+            <button class="navbar__button" @click="menuOpen = ! menuOpen">
+                <div class="navbar_button_container">
+                    <span class="navbar__button_lines"></span>
+                    <span class="navbar__button_lines"></span>
+                    <span class="navbar__button_lines"></span>
+                </div>
+            </button>
+        </div>
+        <nav class="navbar__menu" x-show="menuOpen">
+            <ul class="navbar__menu_items">
+                <li><a href="/fr/articles/replique.html">La réplique</a></li>
+                <li><a href="/fr/articles/film.html">Fight Club</a></li>
+                <li><a href="/fr/articles/realisateur.html">David Fincher</a></li>
+                <li><a href="/fr/articles/livre.html">Insomnia</a></li>
+                <li><a href="/fr/articles/musique.html">Where Is My Mind</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="article">
+        <div class="article__hero">
+            <img src="/public/img/hero_real.webp" alt="Image Hero réalisateur">
+            <div class="article__title container">
+                <h1>David Fincher</h1>
+            </div>
+            <div class="hero__gradient-end"></div>
+        </div>
+        <div class="article__content article__container">
+            <div>
+                <p>David Fincher, un réalisateur américain né en 1962, a bâti une réputation inébranlable grâce à son talent pour créer des films à suspense et des thrillers psychologiques, connus pour leur esthétique sombre et leur exploration de thèmes complexes et ambigus. Les débuts prometteurs de sa carrière de réalisateur remontent à 1992, avec "Alien 3", le troisième opus de la franchise "Alien". Malgré son échec commercial, le film a reçu des éloges critiques généralisés pour son style visuel saisissant et sa violence graphique, annonçant le style distinctif qui allait devenir sa signature.</p>
+                <figure class="article__image">
+                    <img src="/public/img/real_1.webp" alt="Cover Alien 3">
+                    <figcaption>Affiche du film Alien 3</figcaption>
+                </figure>
+            </div>
+            <section>
+                <h4>Une écriture perssonelle</h4>
+                <p>Cependant, c'est en 1995 que David Fincher a marqué le monde du cinéma avec "Seven", un thriller psychologique avec Brad Pitt et Morgan Freeman. Non seulement le film a été un succès critique et commercial, mais il est également devenu une pierre angulaire du genre, s'établissant comme l'un des meilleurs thrillers de tous les temps. La filmographie de Fincher est une mosaïque riche et variée de réalisations cinématographiques. Ses œuvres notables comprennent "The Game" (1997), "Fight Club" (1999), "Panic Room" (2002), "Zodiac" (2007), "The Social Network" (2010), "Gone Girl" (2014) et "Mank" (2020). Chacun de ces films est unique à sa manière, mais ils partagent tous un style visuel distinctif. Les films de Fincher sont souvent imprégnés d'une ambiance sombre, de prises de vue cinématographiques soigneusement travaillées et de couleurs froides qui ajoutent une dimension supplémentaire à l'expérience cinématographique. Des effets sonores percutants sont fréquemment utilisés pour amplifier la tension et l'anxiété, créant un climat de terreur qui est constant dans son travail.</p>
+                <figure class="article__image">
+                    <img src="/public/img/real_2.webp" alt="Image Brad Pitt et David Fincher">
+                    <figcaption>Brad Pitt et David Fincher sur le tournage de Fight Club</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h4>Les thèmes</h4>
+                <p>En ce qui concerne les thèmes, David Fincher n'évite pas les sujets sombres et ambigus. Ses films explorent régulièrement la violence, la corruption, la folie et le désenchantement. Cependant, contrairement à certains réalisateurs, il ne propose pas de réponses simplistes ou de conclusions faciles. Au lieu de cela, il préfère laisser les spectateurs former leurs propres opinions et réfléchir aux thèmes complexes qu'il présente. L'impact de David Fincher sur le cinéma est indéniable. Il est largement reconnu comme l'un des réalisateurs les plus influents de sa génération. Ses films, acclamés par les critiques et appréciés par le public, ont inspiré de nombreux autres réalisateurs à explorer des thèmes similaires et à adopter des techniques cinématographiques similaires. Son expertise dans le domaine du suspense et des thrillers psychologiques est incontestable, et ses créations visuelles et intellectuelles restent gravées dans la mémoire des cinéphiles. En bref, David Fincher continue d'être une figure majeure du cinéma contemporain, propulsant le septième art vers de nouveaux horizons passionnants.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer__container">
+        <div class="footer__carousel">
+            <h2>Autres films</h2>
+            <div class="footer__carousel-container">
+                <div class="footer__item">
+                    <figure>
+                        <img src="/public/img/biblio_2.webp" alt="Cover Zodiac">
+                        <figcaption>Zodiac (2007)</figcaption>
+                    </figure>
+                </div>
+                <div class="footer__item">
+                    <figure>
+                        <img src="/public/img/biblio_3.webp" alt="Cover The Social Network">
+                        <figcaption>The Social Network (2010)</figcaption>
+                    </figure>
+                </div>
+                <div class="footer__item">
+                    <figure>
+                        <img src="/public/img/biblio_4.webp" alt="Cover Panic Room">
+                        <figcaption>Panic Room (2002)</figcaption>
+                    </figure>
+                </div>
+                <div class="footer__item">
+                    <figure>
+                        <img src="/public/img/biblio_5.webp" alt="Cover Mank">
+                        <figcaption>Mank (2020)</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__top">
+            <nav>
+                <ul>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="autresproj.html">Autres projets</a></li>
+                    <li><a href="glossaire.html">Glossaire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/public/img/logo.webp" alt="Logo du site">
+        </div>
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+        <div class="footer__bottom">
+            <img src="/public/img/logo_mmi.webp" alt="Logo MMI">
+            <a href="/en/index.html"><img src="/public/img/english.webp" alt="Drapeau switch anglais"></a>
+    </footer>
+</body>
+
+</html>

@@ -52,3 +52,37 @@
     top: 45%;
     width: 13%;
 }
+
+.footer__carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    padding-bottom: 30px;
+    
+}
+
+.footer__item {
+    flex: none;
+    width: 70%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.footer__item img {
+    width: 60%;
+    height: auto;
+    scroll-snap-align: start;
+}
+
+
+
+.footer__carousel-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    background-color: #000";
+}
