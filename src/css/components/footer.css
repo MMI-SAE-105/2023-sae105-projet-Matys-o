@@ -48,3 +48,16 @@ footer p {
     height: 3px;
     background-color: #ffffff;
 }
+
+.footer__extra {
+    padding-bottom: 20px;
+}
+
+.footer__extra > div {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center;
+}

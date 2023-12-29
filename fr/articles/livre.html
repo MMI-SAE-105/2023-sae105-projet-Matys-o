@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/src/css/pages/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/fr/index.html"><img src="/public/img/logo.webp" alt="Logo header"></a>
+            <button class="navbar__button" @click="menuOpen = ! menuOpen">
+                <div class="navbar_button_container">
+                    <span class="navbar__button_lines"></span>
+                    <span class="navbar__button_lines"></span>
+                    <span class="navbar__button_lines"></span>
+                </div>
+            </button>
+        </div>
+        <nav class="navbar__menu" x-show="menuOpen">
+            <ul class="navbar__menu_items">
+                <li><a href="/fr/articles/replique.html">La réplique</a></li>
+                <li><a href="/fr/articles/film.html">Fight Club</a></li>
+                <li><a href="/fr/articles/realisateur.html">David Fincher</a></li>
+                <li><a href="/fr/articles/livre.html">Insomnia</a></li>
+                <li><a href="/fr/articles/musique.html">Where Is My Mind</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="article">
+        <div class="article__hero">
+            <img src="/public/img/hero_livre.webp" alt="Image Hero livre">
+            <div class="article__title container">
+                <h1>Insomnia</h1>
+            </div>
+            <div class="hero__gradient-end"></div>
+        </div>
+        <div class="article__content article__container">
+            <div>
+                <p>"Insomnie", le roman de Stephen King de 1994, nous plonge dans le monde tourmenté de Ralph Roberts, un policier à la retraite faisant face à une insomnie chronique. Cette œuvre littéraire fascinante explore divers thèmes, offrant une intrigue captivante qui a laissé une empreinte indélébile dans le domaine de la fiction. L'histoire commence par la présentation de la vie monotone de Ralph Roberts, tourmenté par des nuits interminables en raison de l'insomnie. Cependant, son existence est bouleversée lorsque d'étranges visions viennent le hanter. Il commence à voir des nains vêtus de blouses blanches et une aura lumineuse. Convaincu que ces visions sont liées à la mystérieuse disparition d'Anna Wilkie, une jeune habitante de la ville de Derry, Ralph se lance dans une quête personnelle pour la retrouver. Pour cette mission, il trouve le soutien de son ex-femme, Lois, et de son ami, Ned Dunstan, un psychiatre. Ensemble, ils découvrent une réalité sombre : Derry est infestée par une ancienne présence maléfique qui influe de manière insaisissable sur le déroulement des événements.</p>
+                <figure class="article__image">
+                    <img src="/public/img/livre_1.webp" alt="Image Stephen King">
+                    <figcaption>Stephen King qui nous regarde avec un air malicieux</figcaption>
+                </figure>
+            </div>
+            <section>
+                <h4>L’histoire d’un roman</h4>
+                <p>Le roman "Insomnie" explore plusieurs thèmes, dont la perte de vision. La condition de Ralph, où l'insomnie lui enlève progressivement la vision en plein jour, symbolise la perte d'innocence et de clarté. Il est contraint de percevoir le monde sous un jour nouveau, où l'obscurité et le danger sont omniprésents. La quête de la vérité est un autre thème central de l'histoire. Ralph est obsédé par le besoin de retrouver Anna Wilkie et est convaincu que les visions qu'il a sont la clé de cette énigme. Cette quête représente la recherche de la vérité dans un monde tourmenté par le mal et le mystère. La nature du mal est également un élément crucial de l'histoire. Les personnages découvrent que Derry est assaillie par une force ancienne, une présence maléfique qui constitue une menace existentielle pour l'humanité. Cette force corruptrice incarne le mal pur, soulevant des questions sur la nature du mal et de la corruption dans notre monde. Le roman "Insomnie" a remporté l'acclamation de la critique pour son intrigue captivante, ses personnages profondément développés et son exploration approfondie de thèmes universels. Il a également eu un impact significatif, influençant d'autres œuvres de fiction, dont le film "Insomnie" de Christopher Nolan en 2002. Ce long métrage est une adaptation fidèle du roman et explore les mêmes thèmes profonds, mettant en évidence la durabilité et la pertinence de l'histoire.</p>
+                <figure class="article__image">
+                    <img src="/public/img/livre_2.webp" alt="Illustration Insomnia">
+                    <figcaption>Image d’illustration de Insomnia</figcaption>
+                </figure>
+                <p>En conclusion, "Insomnie" est un roman magistral de Stephen King, un thriller psychologique captivant qui explore des thèmes universels tels que la perte de vision, la quête de la vérité et la nature du mal. King démontre une fois de plus sa maîtrise de l'art de la narration, offrant une histoire à la fois terrifiante et émotionnellement captivante.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer__container">
+        <div class="footer__extra">
+            <h2>Livres du même style</h2>
+            <div>
+                <img src="/public/img/biblio_7.webp" alt="Cover Shining">
+                <h2>Shining<br>(1997)</h2>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__top">
+            <nav>
+                <ul>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="autresproj.html">Autres projets</a></li>
+                    <li><a href="glossaire.html">Glossaire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/public/img/logo.webp" alt="Logo du site">
+        </div>
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+        <div class="footer__bottom">
+            <img src="/public/img/logo_mmi.webp" alt="Logo MMI">
+            <a href="/en/index.html"><img src="/public/img/english.webp" alt="Drapeau switch anglais"></a>
+    </footer>
+</body>
+
+</html>
