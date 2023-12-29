@@ -10,3 +10,18 @@
     font-family: Mulish;
 }
 
+.article__music {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article__music h3 {
+    font-size: var(--heading);
+        color: #000;
+        font-family: Fjalla One;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+}
+

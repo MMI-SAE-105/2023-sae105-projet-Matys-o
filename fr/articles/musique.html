@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/src/css/pages/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/fr/index.html"><img src="/public/img/logo.webp" alt="Logo header"></a>
+            <button class="navbar__button" @click="menuOpen = ! menuOpen">
+                <div class="navbar_button_container">
+                    <span class="navbar__button_lines"></span>
+                    <span class="navbar__button_lines"></span>
+                    <span class="navbar__button_lines"></span>
+                </div>
+            </button>
+        </div>
+        <nav class="navbar__menu" x-show="menuOpen">
+            <ul class="navbar__menu_items">
+                <li><a href="/fr/articles/replique.html">La réplique</a></li>
+                <li><a href="/fr/articles/film.html">Fight Club</a></li>
+                <li><a href="/fr/articles/realisateur.html">David Fincher</a></li>
+                <li><a href="/fr/articles/livre.html">Insomnia</a></li>
+                <li><a href="/fr/articles/musique.html">Where Is My Mind</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="article">
+        <div class="article__hero">
+            <img src="/public/img/hero_musique.webp" alt="Image Hero musique">
+            <div class="article__title container">
+                <h1>Where Is My Mind</h1>
+            </div>
+            <div class="hero__gradient-end"></div>
+        </div>
+        <div class="article__content article__container">
+            <div>
+                <p>La chanson "Where Is My Mind?" du groupe de rock alternatif Pixies, sortie en 1988 sur leur premier album Surfer Rosa, a acquis une notoriété pour son utilisation mémorable dans la scène finale du film Fight Club en 1999. Cette chanson joue un rôle essentiel dans la compréhension de la psychologie du personnage principal et des thèmes profonds sous-jacents au film. "Where Is My Mind?" est une composition de Black Francis, le chanteur et guitariste des Pixies. Les paroles de la chanson sont énigmatiques et ouvertes à l'interprétation, mais semblent évoquer un sentiment de confusion et de désorientation. Le refrain récurrent, "Where is my mind?", exprime un sentiment de perte de soi, une quête de sens dansun monde de chaos perpétuel.</p>
+                <figure class="article__image">
+                    <img src="/public/img/musique_1.webp" alt="">
+                    <figcaption>A remplir</figcaption>
+                </figure>
+            </div>
+            <section>
+                <h4>L’art de la scène finale</h4>
+                <p>La scène finale de Fight Club est une apothéose de destruction et de révélation. Les principaux protagonistes, le narrateur (interprété par Edward Norton) et Tyler Durden (interprété par Brad Pitt), entreprennent de détruire les bâtiments de la fictive Paper Street Soap Company, symbolisant la décadence de la société de consommation. Le narrateur subit de graves blessures, tandis que Tyler perd la vie dans l'explosion. C'est à ce moment, lors de la mort de Tyler, que la chanson "Where Is My Mind?" commence à résonner. La chanson "Where Is My Mind?" peut être interprétée comme une métaphore de la perte de soi. Dans le contexte de Fight Club, elle reflète la désintégration de la personnalité du narrateur. Il est un homme en quête de sens, assailli par la confusion et la désorientation, et la chanson exprime son sentiment d'aliénation envers lui-même. Elle incarne la confusion existentielle et la rupture des frontières entreréalité et folie. "Where Is My Mind?" transcende son rôle de simple toile musicale pour la scène finale de Fight Club. Elle devient un élément central qui intensifie la puissance émotionnelle de cette séquence. Cette chanson emblématique est indissociable du film et incarne le symbole de la quête de sens dans une société en déclin, ainsi que la perte de repères. Au-delà de son sens littéral, la chanson peut être abordée sous un angle symbolique. Elle peut être vue comme une métaphore de la condition humaine complexe et souvent paradoxale. Les êtres humains se retrouvent fréquemment perdus dans un monde rempli d'énigmes, et "Where Is My Mind?" exprime ce sentiment de perplexité et d'aliénation.</p>
+                <figure class="article__image">
+                    <img src="/public/img/musique_2.webp" alt="Image scène finale">
+                    <figcaption>Dernière scène de Fight Club</figcaption>
+                </figure>
+                <p>De plus, la chanson peut également être interprétée comme une critique cinglante de la société moderne et de sa déshumanisation. Dans ce contexte de consumérisme effréné, les individus sont réduits à de simples consommateurs, accaparés par le rythme frénétique de la vie, leur laissant peu d'espace pour se retrouver. La chanson reflète ce sentiment d'aliénation et de déconnexion de soi. Quelle que soit l'interprétation qui prévaut, "Where Is My Mind?" demeure une œuvre puissante et évocatrice qui continue de captiver les auditeurs, tout en offrant une réflexion profonde sur l'âme humaine et les défis de la société contemporaine.</p>
+            </section>
+            <div class="article__music">
+                <h3>Musique</h3>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/0KzAbK6nItSqNh8q70tb0K?utm_source=generator" width="100%" height="352"
+                    frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="footer__container">
+        <div class="footer__line"></div>
+        <div class="footer__top">
+            <nav>
+                <ul>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="autresproj.html">Autres projets</a></li>
+                    <li><a href="glossaire.html">Glossaire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/public/img/logo.webp" alt="Logo du site">
+        </div>
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+        <div class="footer__bottom">
+            <img src="/public/img/logo_mmi.webp" alt="Logo MMI">
+            <a href="/en/index.html"><img src="/public/img/english.webp" alt="Drapeau switch anglais"></a>
+    </footer>
+</body>
+
+</html>
