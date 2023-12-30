@@ -11,15 +11,13 @@
     <header>
         <div class="navbar">
             <a href="/fr/index.html"><img src="/public/img/logo.webp" alt="Logo header"></a>
-            <button class="navbar__button" @click="menuOpen = ! menuOpen">
-                <div class="navbar_button_container">
-                    <span class="navbar__button_lines"></span>
-                    <span class="navbar__button_lines"></span>
-                    <span class="navbar__button_lines"></span>
-                </div>
+            <button class="navbar__button" :class="menuOpen && 'navbar__button-open'" @click="menuOpen = ! menuOpen">
+                    <span class="navbar__button_lines line1"></span>
+                    <span class="navbar__button_lines line2"></span>
+                    <span class="navbar__button_lines line3"></span>
             </button>
         </div>
-        <nav class="navbar__menu" x-show="menuOpen">
+        <nav class="navbar__menu" x-show="menuOpen" x-transition.duration.300ms>
             <ul class="navbar__menu_items">
                 <li><a href="/fr/articles/replique.html">La réplique</a></li>
                 <li><a href="/fr/articles/film.html">Fight Club</a></li>
