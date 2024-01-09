@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Home</title>
     <link rel="stylesheet" href="/src/css/pages/styles.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -19,7 +19,7 @@
         </div>
         <nav class="navbar__menu" x-show="menuOpen" x-transition.duration.300ms>
             <ul class="navbar__menu_items">
-                <li><a href="/fr/articles/replique.html">La réplique</a></li>
+                <li><a href="/fr/articles/replique.html">Replica</a></li>
                 <li><a href="/fr/articles/film.html">Fight Club</a></li>
                 <li><a href="/fr/articles/realisateur.html">David Fincher</a></li>
                 <li><a href="/fr/articles/livre.html">Insomnia</a></li>
@@ -32,9 +32,9 @@
             <img src="/public/img/hero.webp" alt="Image Hero Insomnia">
         </div>
         <section class="home__content container">
-            <h1>«Avec l’insomnie, plus rien n’est réel. Tout devient lointain. Tout est une copie, d’une copie, d’une copie»</h1>
+            <h1>««With insonia, nothing is real anymore, everything becomes distant. Everything is a copy, a copy, a copy»»</h1>
             <a class="home__button1" href="articles/article1.html">
-                En savoir plus
+                More
                 <img src="/public/icons/Arrow.svg" alt="Icone flèche">
             </a>
             <div class="home__card">
@@ -42,7 +42,7 @@
                 <a class="home__button2" href="articles/film.html">Fight Club</a>
             </div>
             <div class="carousel">
-                <h2>VOIR AUSSI</h2>
+                <h2>Watch Also</h2>
                 <div class="carousel__container" x-ref="parent">
                     <button class="carousel__button-left" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><img
                             src="/public/icons/Arrow.svg" alt="Flèche carrousel gauche"></button>
@@ -52,7 +52,7 @@
                         <a href="articles/realisateur.html">
                             <figure>
                                 <img src="/public/img/home_2.webp" alt="">
-                                <figcaption>David Fincher, du génie</figcaption>
+                                <figcaption>David Fincher, Genious</figcaption>
                             </figure>
                         </a>
                     </div>
@@ -60,7 +60,7 @@
                         <a href="articles/livre.html">
                             <figure>
                                 <img src="/public/img/home_2.webp" alt="">
-                                <figcaption>Insomnia, récit endormi</figcaption>
+                                <figcaption>Insomnia, sleeping book</figcaption>
                             </figure>
                         </a>
                     </div>
@@ -68,15 +68,7 @@
                         <a href="articles/livre.html">
                             <figure>
                                 <img src="/public/img/home_2.webp" alt="">
-                                <figcaption>Insomnia, récit endormi</figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="carousel__item">
-                        <a href="articles/livre.html">
-                            <figure>
-                                <img src="/public/img/home_2.webp" alt="">
-                                <figcaption>Insomnia, récit endormi</figcaption>
+                                <figcaption>Where is my mind, Pixies</figcaption>
                             </figure>
                         </a>
                     </div>
@@ -89,18 +81,18 @@
         <div class="footer__top">
             <nav>
                 <ul>
-                    <li><a href="/fr/about.html">À propos</a></li>
-                    <li><a href="/fr/autresproj.html">Autres projets</a></li>
-                    <li><a href="/fr/glossaire.html">Glossaire</a></li>
+                    <li><a href="/fr/about.html">About</a></li>
+                    <li><a href="/fr/autresproj.html">Other Projects</a></li>
+                    <li><a href="/fr/glossaire.html">Glossary</a></li>
                     <li><a href="/fr/contact.html">Contact</a></li>
                 </ul>
             </nav>
             <img src="/public/img/logo.webp" alt="Logo du site">
         </div>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+        <p>Project carried out as part of a pedagogical exercise at the MMi department of Montbéliard+</p>
         <div class="footer__bottom">
             <img src="/public/img/logo_mmi.webp" alt="Logo MMI">
-            <a href="/en/accueil.html"><img src="/public/img/english.webp" alt="Drapeau switch anglais"></a>
+            <a href="/fr/index.html"><img src="/public/img/french.webp" alt="Drapeau switch français"></a>
             </div>
     </footer>
 </body>

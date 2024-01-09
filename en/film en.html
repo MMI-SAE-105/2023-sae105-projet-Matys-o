@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen: false}" :class="menuOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/src/css/pages/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/fr/index.html"><img src="/public/img/logo.webp" alt="Logo header"></a>
+            <button class="navbar__button" :class="menuOpen && 'navbar__button-open'" @click="menuOpen = ! menuOpen">
+                    <span class="navbar__button_lines line1"></span>
+                    <span class="navbar__button_lines line2"></span>
+                    <span class="navbar__button_lines line3"></span>
+            </button>
+        </div>
+        <nav class="navbar__menu" x-show="menuOpen">
+            <ul class="navbar__menu_items">
+                <li><a href="/fr/articles/replique.html">Replica</a></li>
+                <li><a href="/fr/articles/film.html">Fight Club</a></li>
+                <li><a href="/fr/articles/realisateur.html">David Fincher</a></li>
+                <li><a href="/fr/articles/livre.html">Insomnia</a></li>
+                <li><a href="/fr/articles/musique.html">Where Is My Mind</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="article">
+        <div class="article__hero">
+            <img src="/public/img/hero_film.webp" alt="Image Hero film">
+            <div class="article__title container">
+                <h1>Fight Club</h1>
+            </div>
+            <img src="/public/img/cover_film.webp" alt="">
+            <div class="hero__gradient-end"></div>
+        </div>
+        <div class="article__content article__container">
+            <div>
+                <p>David Fincher's acclaimed 1999 film "Fight Club" is a work of great complexity, immersing the audience in profound reflections on existence, in which the theme of sleep plays a central role. In this cinematic adventure, the main character, the narrator (played by Edward Norton), struggles with an insurmountable problem of insomnia. This insomnia, both symbolic and concrete, becomes a reflection of his inner torment and his desperate search for meaning in a world he perceives as devoid of interest. The narrator's inability to sleep becomes a clear symbol of his existential malaise. Trapped in a life devoid of passion and meaning, he is obsessed by sleep deprivation, which is in turn a reflection of his lack of contentment. Sleep becomes a means of escape from the insipid reality that consumes him.</p>
+                <figure class="article__image">
+                    <img src="/public/img/film_1.webp" alt="Image Fight Club">
+                    <figcaption>Edward Newton talking to himself</figcaption>
+                </figure>
+            </div>
+            <section>
+                <h4>A deep nap</h4>
+                <p>However, everything changes when the narrator crosses paths with Tyler Durden, played by the effervescent Brad Pitt, who plunges him into an alternative world of rebellion and excitement. Together, they give birth to Fight Club, a place where violence becomes a form of communion and deliverance. The narrator finally finds an escape from his long-suppressed frustration and anger. Sleep remains a central element of the story, but its role changes. It is no longer an escape, but rather a means of reconciling with his own truth. The narrator learns to accept his suffering and make sense of his chaotic life. A deeper analysis of the film reveals that the narrator's insomnia can be interpreted as an incisive critique of consumer society. His inability to sleep becomes a symptom of the dehumanization resulting from the unbridled quest for material goods and the obsession with a consumerist lifestyle. In this modernized society, individuals are reduced to mere consumers, subjected to a frenetic pace of life that gives them no respite.</p>
+                <figure class="article__image">
+                    <img src="/public/img/film_2.webp" alt="Image signature du contrat">
+                    <figcaption>Edward Norton et Tyler Durden signing a contract</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h4>End of the nap</h4>
+                <p>Fight Club is a radical response to this consumerist spiral. It reveals itself as a refuge where individuals can come together to escape the chains of consumerism, and where sleep regains its role as an essential element in this emancipation. It is through moments of rest and reflection that Fight Club members are able to reconnect with their own humanity, lost in the tumult of modern life.
+
+                    In short, the theme of sleep in "Fight Club" transcends the narrator's insomnia. It embodies both his inner torment and the searing critique of a society obsessed with consumerism. The film reminds us how fundamental it is to find a balance between rest and action, between self-acceptance and revolt against a dehumanized existence. "Fight Club" goes beyond cinematic conventions to plunge us into a profound reflection on the nature of human existence.</p>
+            </section>
+            <div class="article__extra">
+                <h3>Trailer</h3>
+                <video controls>
+                    <source src="/public/video/fight_club.mp4" type="video/mp4">
+            </div>
+        </div>
+    </main>
+    <footer class="footer__container">
+        <div class="footer__line"></div>
+        <div class="footer__top">
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="autresproj.html">Other Projects</a></li>
+                    <li><a href="glossaire.html">Glossary</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/public/img/logo.webp" alt="Logo du site">
+        </div>
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+        <div class="footer__bottom">
+            <img src="/public/img/logo_mmi.webp" alt="Logo MMI">
+            <a href="/fr/articles/film.html"><img src="/public/img/french.webp" alt="Drapeau switch français"></a>
+        </div>
+    </footer>
+</body>
+</html>
